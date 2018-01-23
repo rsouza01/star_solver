@@ -17,6 +17,16 @@ def generate_default_config():
         config.write(configfile)
 
 
+def read_config(config_name):
+
+	config = configparser.ConfigParser()
+	config.read(config_name)
+
+	print(config['EOS']['filename'])
+	
+	return config
+
+
 def main():
     generate_default_config()
 

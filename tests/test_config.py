@@ -22,3 +22,7 @@ class ConfigFileTests(unittest.TestCase):
 
         #Assert
         cfg.generate_default_config()
+        
+        config = cfg.read_config('solver.ini')
+        self.assertEqual('eos.csv', config['EOS']['filename'])
+

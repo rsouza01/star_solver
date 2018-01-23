@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-rm solver.ini
+rm -f solver.ini
 
 python3 -m unittest discover
 
