@@ -21,4 +21,4 @@ class ConfigFileTests(unittest.TestCase):
         #Act
 
         #Assert
-        pass
+        cfg.generate_default_config()
