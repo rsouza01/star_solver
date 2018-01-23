@@ -1,0 +1,5 @@
+#!/bin/bash
+
+BINPATH=`dirname $0`
+
+python3 "$BINPATH/../star_solver/main.py" $@
